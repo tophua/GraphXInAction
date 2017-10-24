@@ -1,5 +1,6 @@
 import org.apache.spark.graphx._
 import scala.reflect.ClassTag
+
 def drawGraph[VD:ClassTag,ED:ClassTag](g:Graph[VD,ED]) = {
 val u = java.util.UUID.randomUUID
 val v = g.vertices.collect.map(_._1)

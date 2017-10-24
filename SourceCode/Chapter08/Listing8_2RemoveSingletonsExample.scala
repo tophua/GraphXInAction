@@ -7,7 +7,7 @@ val edges = sc.makeRDD(Seq(
 val originalGraph = Graph(vertices, edges)
 val subgraph = originalGraph.subgraph(et => et.attr == "is-friends-with")
 
-// show vertices of subgraph – includes Dianne
+// show vertices of subgraph  includes Dianne
 subgraph.vertices.foreach(println)
 
 // now call removeSingletons and show the resulting vertices

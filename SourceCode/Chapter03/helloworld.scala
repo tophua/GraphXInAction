@@ -1,3 +1,5 @@
+package org.apache.spark.examples.graphx
+
 import org.apache.spark.SparkContext
 import org.apache.spark.SparkConf
 

@@ -21,7 +21,7 @@ object readrdf {
     val sc = new SparkContext(
       new SparkConf().setMaster("local").setAppName("readrdf"))
     val t0 = System.currentTimeMillis
-    val r = readRdf(sc, “yagoFacts.tsv")
+    val r = readRdf(sc, "yagoFacts.tsv")
     println("#edges=" + r.edges.count +
             " #vertices=" + r.vertices.count)
     val t1 = System.currentTimeMillis
